@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.blog {
+    display: flex;
+
+    margin: 3rem 0 10rem;
+}
+
+.blog_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_sections {
+    margin-top: 5rem;
+    margin-left: 14rem;
+}
+
+.blog_item {
+    display: flex;
+
+    margin-bottom: 3rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.blog-item_link {
+    text-decoration: none;
+    color: @black;
+
+    transition: color .1s linear;
+
+    &:hover {
+        color: @yellow;
+    }
+}
+
+.blog_block {
+    display: flex;
+
+    max-width: 70%;
+    margin-left: auto;
+    padding: 0 6rem 0 8rem;
+}
+
+.blog_post {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 9rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.post_date {
+    margin-top: 1rem;
+
+    color: @yellow;
+}
+
+.post_title {
+    margin: 2.2rem 0 1.5rem;
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.post_description {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.3;
+}
+

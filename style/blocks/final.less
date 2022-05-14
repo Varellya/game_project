@@ -1,0 +1,101 @@
+// main: ../style.less
+
+.final {
+    display: flex;
+    justify-content: space-between;
+
+    color: @white;
+
+    background-color: @black;
+}
+
+.final_nav {
+    display: flex;
+    flex-direction: column;
+
+    padding: 12rem 0 3rem 2.5rem;
+}
+
+.final_logo {
+    margin-bottom: 6rem;
+
+    font-size: 6rem;
+    font-weight: 700;
+
+    span {
+        color: @yellow;
+    }
+}
+
+.final-nav_list {
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+
+    &:after {
+        content: "";
+        display: block;
+
+        width: 100%;
+        height: 2px;
+        margin-top: 4.5rem;
+
+        background-color: @yellow;
+    }
+}
+
+.final-nav_item {
+    margin-bottom: 2.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.final-nav_link {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @white;
+
+    transition: color .15s linear;
+
+    &:hover {
+        color: @yellow;
+    }
+}
+
+.final_social {
+    display: flex;
+}
+
+.final_block {
+    position: relative;
+
+    width: calc(100% - 32rem);
+}
+
+.final_img {
+    display: flex;
+
+    width: 100%;
+
+    opacity: 20%;
+}
+
+.final_title {
+    position: absolute;
+    bottom: 15rem;
+    left: 2rem;
+    z-index: 1;
+
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 0.8;
+
+    span {
+        color: @yellow;
+    }
+}
+
